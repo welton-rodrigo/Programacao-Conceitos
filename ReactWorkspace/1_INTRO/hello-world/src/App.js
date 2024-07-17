@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import first from './components/FirstComponent'
+import FirstComponent from './components/FirstComponent';
 
 function App() {
   return (
-    <div className="App">
-      <h1>HELLO WORLD</h1>
-    </div>
+    <FirstComponent />
   );
 }
 
