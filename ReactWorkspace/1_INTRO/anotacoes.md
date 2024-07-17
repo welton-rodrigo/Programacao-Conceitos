@@ -28,6 +28,37 @@ Há algumas chaves para o desenvolvimento em React
 * Possibilitando criar softwares em JS no lado do servidor;
 * Temos enão um código JS rodando em C++ para garantir alta performace;
 
+## Importando componente
+* A importação é a maneira que temos de reutilizar o componente;
+* Utilizamos a sintaxe: import X from './componentes/X' onde X é o nome do componente;
+* Para colocar o componente importado em outro componente, precisamos colocá-lo em forma de tag: <FirstComponent />
+
+## JSX 
+* JSX é o HTML do React;
+* Onde vamos declarar as tags de HTML que serão exibidas no navegador;
+* Ficam no return do componente;
+* Temos algumas diferenças do HTML, por exemplo className;
+* Isso se dá pelas Instruçoes semelhantes de JS e HTML,  pois o JSX é JavaScript, então algumas terão nomes diferentes;
+* O JSX pode ter apenas um elemento pai;
+
+## Comentarios JSX
+
+/*
+exemplode comentario 
+*/
+
+// exemplo de comentários 
+
+{/* comentario dentro do bloco javascript */}
+
+## TEMPLATE EXPRESSIONS
+* template expression é o recurso que nos permite executar JS no JSX e também interporlar variaveis
+* Isso sera muito util ao longo dos seus projetos em React;
+* A sintaxe é: {algumCódigoEmJS}
+* Tudo que está entre chaves é processado em JavaScript e nos retorna resultado;
+
+
+
 
 
 
