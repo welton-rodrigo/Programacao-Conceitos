@@ -1,3 +1,5 @@
+import MyComponent from "./MyComponent";
+
 const FirstComponent = () =>{
 
    const name = "welton";
@@ -13,6 +15,7 @@ const FirstComponent = () =>{
             <p>valor de uma soma: {4*2}</p>
             <p>Console log: {console.log("teste de console")}</p>
             {alert("ola ")}
+            <MyComponent />
 
            </div>
       
