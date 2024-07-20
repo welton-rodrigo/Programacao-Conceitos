@@ -57,6 +57,19 @@ exemplode comentario
 * A sintaxe é: {algumCódigoEmJS}
 * Tudo que está entre chaves é processado em JavaScript e nos retorna resultado;
 
+## Evento de click
+* Os eventos para front-end são essenciais;
+* em varias situações vamos precisar do click, como ao enviar formularios;
+* No react os eventos ja estao 'prontos' podemos utilizar onclick para uma funcao ao clicar em um elemento
+* esta funcao e criada na propria funcao do componente
+* As funcoes geralmente tem o padrao handleAlgumaCoisa
+
+## Funções no evento
+* Quando as funções são simples podemos realizar a logica no proprio evento;
+* Isso torna nosso codigo mais complicado, por atrelar logica com HTML;
+* Mas em algumas situacoes e aplicavel;
+
+
 
 
 
