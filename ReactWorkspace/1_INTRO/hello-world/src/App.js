@@ -5,14 +5,16 @@ import FirstComponent from './components/FirstComponent';
 import MyComponent from './components/MyComponent';
 import Events from './components/Events';
 import Challenge from './components/Challenge';
-
+import City from "./assets/teste.jpg";
 function App() {
   return (
     <>
-    <FirstComponent />
-    <MyComponent />
-    <Events />
-    <Challenge />
+        <div>
+          <img src="/logo512.png" alt="logo" />
+        </div>
+        <div>
+          <img src={City} alt="logo" />
+        </div>
     </>
   );
 }

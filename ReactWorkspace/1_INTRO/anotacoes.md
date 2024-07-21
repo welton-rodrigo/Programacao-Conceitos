@@ -69,6 +69,22 @@ exemplode comentario
 * Isso torna nosso codigo mais complicado, por atrelar logica com HTML;
 * Mas em algumas situacoes e aplicavel;
 
+## Funções de renderização
+* podemos criar funçoes que retornam JSX;
+* Isso serve para criar situações que dependam de outras condições;
+* Ou seja, o JSX a ser renderizado pode variar por alguma variavel, por exemplo;
+
+## O que são hooks?
+* Recursos do react que tem diversas funcoes;
+* Como: guardar e alterar o estado de algum dado na nossa aplicacao;
+* Todos os hooks comecam com use, por exemplo useState;
+* Podemos criar nossos hooks, isso e chamado de custom hook;
+* Geralmente sao uteis em todas nossas aplicacoes, utilizaremos diversas ao longo do curso;
+
+## useState e um dos mais utilizados
+* o hook de useState e um dos mais utilizados;
+* utilizamos para gerenciar o estado de algum dado, variaveis nao funcionam corretamente, o componente nao re-renderiza;
+* Para guardar o dado definimos o nome da variavel e para alterar vamos utilizar setnome, onde nome e do nosso dado.
 
 
 
