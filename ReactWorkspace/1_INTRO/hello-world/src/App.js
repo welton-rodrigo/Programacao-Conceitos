@@ -8,11 +8,13 @@ import Challenge from './components/Challenge';
 import City from "./assets/teste.jpg";
 import ManageData from './components/ManageData';
 import ListRender from './components/ListRender';
+import Experiencia from './components/Experiencia';
 function App() {
   return (
     <>
        <ManageData />
        <ListRender />
+       <Experiencia />
     </>
   );
 }
