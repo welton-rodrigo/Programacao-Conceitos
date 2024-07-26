@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from '@mui/material/Button';
 
 const ListRender = () => {
     const [list] = useState(["welton", "gabriel","joao"])
@@ -30,7 +31,7 @@ const ListRender = () => {
               </li>
           ))}
         </ul>
-          <button onClick={deleteRandom}>delete random</button>
+          <Button variant="contained" disabled onClick={deleteRandom}>delete random</Button>
     </div>
   )
 }
