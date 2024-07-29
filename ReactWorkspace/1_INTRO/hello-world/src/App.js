@@ -9,12 +9,12 @@ import City from "./assets/teste.jpg";
 import ManageData from './components/ManageData';
 import ListRender from './components/ListRender';
 import Experiencia from './components/Experiencia';
+import ConditionalRender from './components/ConditionalRender';
 function App() {
   return (
     <>
-       <ManageData />
-       <ListRender />
-       <Experiencia />
+     
+       <ConditionalRender />
     </>
   );
 }

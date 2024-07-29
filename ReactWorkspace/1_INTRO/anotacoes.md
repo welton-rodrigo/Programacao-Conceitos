@@ -86,6 +86,20 @@ exemplode comentario
 * utilizamos para gerenciar o estado de algum dado, variaveis nao funcionam corretamente, o componente nao re-renderiza;
 * Para guardar o dado definimos o nome da variavel e para alterar vamos utilizar setnome, onde nome e do nosso dado.
 
+## Renderização de lista
+* Uma outra ação bem comun é renderizar listas de dados no template;
+* Fazemos isso com os dados com tipo de array;
+* Utilizando o metodo map para nos auxiliar;
+* alem dos dados podemos inserir JSX em cada iteração;
+
+## A propriedade key
+* Iterar  listas sem a propriedade key no gera um warning, podemos verificar isso no console;
+* O React precisa de uma chave unica em cada um dos itens iterados;
+* Isso serve para ajuda-lo na renderizacao do componente;
+* Geralmente teremos um array de objetos e podemos colocar key como alguma chave univa, como o id de algum dado;
+* Em ultimo caso devemos utilizar o index do metodo map;(má pratica)
+
+
 
 
 
