@@ -10,11 +10,18 @@ import ManageData from './components/ManageData';
 import ListRender from './components/ListRender';
 import Experiencia from './components/Experiencia';
 import ConditionalRender from './components/ConditionalRender';
+import ShowUserName from './components/ShowUserName';
+import { useState } from 'react';
+import CarDetails from './components/CarDetails';
 function App() {
+  const [name] = useState("welton 2");
+
   return (
     <>
-     
-       <ConditionalRender />
+     <CarDetails brand="VM" km={10000} color="blue" />
+     {/*Reaproveitando */}
+     <CarDetails brand="ford" km={300} color="black" />
+     <CarDetails brand="Chevrolet" km={200} color="branco" newCar={true} />
     </>
   );
 }
