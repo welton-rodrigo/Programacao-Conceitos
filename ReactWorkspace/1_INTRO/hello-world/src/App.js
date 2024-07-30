@@ -13,6 +13,8 @@ import ConditionalRender from './components/ConditionalRender';
 import ShowUserName from './components/ShowUserName';
 import { useState } from 'react';
 import CarDetails from './components/CarDetails';
+import Fragments from './components/Fragments';
+import Container from './components/Container';
 function App() {
   const [name] = useState("welton 2");
 
@@ -28,8 +30,21 @@ function App() {
  
      {/**loop em arrays de objetos */}
      {car.map((car) => (
-      <CarDetails brand={car.brand} color={car.color} newCar={car.newCar} km={car.km} />
+      <CarDetails 
+      brand={car.brand} 
+      color={car.color} 
+      newCar={car.newCar} 
+      km={car.km} 
+      />
      ))}
+  {/*fragment */}
+  <Fragments />
+  {/*Children */}
+  <Container myValue="testing">
+      <p>este e o conteudo</p>
+
+  </Container>
+
     </>
   );
 }

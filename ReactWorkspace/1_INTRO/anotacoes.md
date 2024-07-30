@@ -99,6 +99,11 @@ exemplode comentario
 * Geralmente teremos um array de objetos e podemos colocar key como alguma chave univa, como o id de algum dado;
 * Em ultimo caso devemos utilizar o index do metodo map;(má pratica)
 
+## React Fragments
+* Os react Fragments são interessantes para quando precisamos ter mais de um elemento pai em um componente;
+* Criamos uma tag vazia: <>... </>
+* E ela serve como elemento pai, nao alterando a estrutura do html com uma div por exemplo
+
 
 
 
