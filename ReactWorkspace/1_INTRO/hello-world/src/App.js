@@ -16,12 +16,20 @@ import CarDetails from './components/CarDetails';
 function App() {
   const [name] = useState("welton 2");
 
+  const car = [
+    {id:1, brand: "ferrari", color: "vermelha", newCar: true, km: 1},
+    {id:2, brand: "gol", color: "prata", newCar: false, km: 130.000},
+    {id:3, brand: "uno", color: "cinza", newCar: false, km: 199.000},
+    {id:4, brand: "kia", color: "amarelo", newCar: true, km: 1},
+  ]
+
   return (
     <>
-     <CarDetails brand="VM" km={10000} color="blue" />
-     {/*Reaproveitando */}
-     <CarDetails brand="ford" km={300} color="black" />
-     <CarDetails brand="Chevrolet" km={200} color="branco" newCar={true} />
+ 
+     {/**loop em arrays de objetos */}
+     {car.map((car) => (
+      <CarDetails brand={car.brand} color={car.color} newCar={car.newCar} km={car.km} />
+     ))}
     </>
   );
 }
