@@ -18,8 +18,16 @@ import Container from './components/Container';
 import ExecuteFunction from './components/ExecuteFunction';
 import Message from './components/Message';
 import ChangeMessageState from './components/ChangeMessageState';
+import UserDetails from './components/UserDetails';
 function App() {
   const [name] = useState("welton 2");
+
+  const pessoas = [
+    {id:1, nome: "welton", idade: 30, profissao: "TI", carteira: true},
+    {id:2, nome: "alberto", idade: 35, profissao: "ADG",carteira: false},
+    {id:3, nome: "maria", idade: 60, profissao: "CONTAB", carteira: true},
+    {id:4, nome: "joana", idade: 15, profissao: "FAXINEIRA", carteira: true},
+  ]
 
   const car = [
     {id:1, brand: "ferrari", color: "vermelha", newCar: true, km: 1},
@@ -61,7 +69,17 @@ function App() {
        {/*state lift*/}
        <Message msg={message} />
        <ChangeMessageState handleMessage={handleMessage} />
-       
+
+       {/*Desafio proposto*/}
+       {pessoas.map((pessoas) => (
+      <UserDetails 
+      key={pessoas.id}
+      nome={pessoas.nome} 
+      idade={pessoas.idade} 
+      profissao={pessoas.profissao} 
+      carteira={pessoas.carteira} 
+      />
+     ))}
     </>
   );
 }
