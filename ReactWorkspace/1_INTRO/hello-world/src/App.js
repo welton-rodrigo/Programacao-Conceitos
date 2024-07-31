@@ -23,10 +23,10 @@ function App() {
   const [name] = useState("welton 2");
 
   const pessoas = [
-    {id:1, nome: "welton", idade: 30, profissao: "TI", carteira: true},
-    {id:2, nome: "alberto", idade: 35, profissao: "ADG",carteira: false},
-    {id:3, nome: "maria", idade: 60, profissao: "CONTAB", carteira: true},
-    {id:4, nome: "joana", idade: 15, profissao: "FAXINEIRA", carteira: true},
+    {id:1, nome: "welton", idade: 30, profissao: "TI"},
+    {id:2, nome: "alberto", idade: 35, profissao: "ADG"},
+    {id:3, nome: "maria", idade: 60, profissao: "CONTAB"},
+    {id:4, nome: "joana", idade: 15, profissao: "FAXINEIRA"},
   ]
 
   const car = [
@@ -77,7 +77,7 @@ function App() {
       nome={pessoas.nome} 
       idade={pessoas.idade} 
       profissao={pessoas.profissao} 
-      carteira={pessoas.carteira} 
+       
       />
      ))}
     </>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UserDetails = ({nome, idade, profissao, carteira}) => {
+const UserDetails = ({nome, idade, profissao }) => {
   return (
     <>
     <div>
@@ -9,7 +9,7 @@ const UserDetails = ({nome, idade, profissao, carteira}) => {
             <li>Nome: {nome}</li>
             <li>Idade: {idade}</li>
             <li>profissao: {profissao}</li>
-             {carteira && <li>Habilitado para CNH</li>}
+             {idade >= 18 ? (<li>Habilitado para CNH</li>) : (<li>Menor de idade</li>)}
         </ul>
     </div>
     </>
