@@ -104,6 +104,20 @@ exemplode comentario
 * Criamos uma tag vazia: <>... </>
 * E ela serve como elemento pai, nao alterando a estrutura do html com uma div por exemplo
 
+## Propriedade Children
+* permite utilizar codigo html na prop pai utilizamops a {chidren} no parametro e no corpo da prop filho
+
+## Funções em props
+* AS funcoes podem ser passadas para os props normalmente;
+* Basta criar a função no componente pai e enviar como prop para o componente;
+* no componente filho pode ser ativada por um evento, por exemplo;
+
+## Elevação de state
+* elevação de state ou state lift é quando um valor é elevado do componente filho para o componente pai
+* geralmente temos um componente que usa o state e outro que o altera
+* entao precisamos passar a alteração para o componente pai, e este passa para o componente que usa state
+
+
 
 
 

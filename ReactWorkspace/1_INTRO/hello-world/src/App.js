@@ -15,6 +15,9 @@ import { useState } from 'react';
 import CarDetails from './components/CarDetails';
 import Fragments from './components/Fragments';
 import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
+import Message from './components/Message';
+import ChangeMessageState from './components/ChangeMessageState';
 function App() {
   const [name] = useState("welton 2");
 
@@ -25,12 +28,22 @@ function App() {
     {id:4, brand: "kia", color: "amarelo", newCar: true, km: 1},
   ]
 
+  function showMessage(){
+    console.log("Evento do componente pai")
+  }
+
+  const [message, setMessage] = useState("");
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  }
+
   return (
     <>
  
      {/**loop em arrays de objetos */}
      {car.map((car) => (
       <CarDetails 
+      key={car.id}
       brand={car.brand} 
       color={car.color} 
       newCar={car.newCar} 
@@ -42,9 +55,13 @@ function App() {
   {/*Children */}
   <Container myValue="testing">
       <p>este e o conteudo</p>
-
   </Container>
-
+  {/*Executar função*/}
+     <ExecuteFunction myFunction={showMessage}/>
+       {/*state lift*/}
+       <Message msg={message} />
+       <ChangeMessageState handleMessage={handleMessage} />
+       
     </>
   );
 }
