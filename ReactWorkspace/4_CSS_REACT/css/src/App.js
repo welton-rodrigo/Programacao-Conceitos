@@ -11,6 +11,9 @@ function App() {
       {/*CSS DE COMPONENTE */}
       <MyComponent />
       <p className='my-comp-paragraph'>Este e o paragrafo do app</p>
+      {/*Inline CSS*/}
+      <p style={{color: "blue", padding:"25px", borderTop:"2px solid red"}}>Este elemnto foi estilizado de forma inline</p>
+
 
     </div>
   );
