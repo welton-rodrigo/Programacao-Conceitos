@@ -8,7 +8,9 @@ const MyForm = () => {
   const handleName = (e) => {
     setName(e.target.value);
   };
-console.log(name);
+
+  console.log(name);
+  console.log(email);
   return (
     <div>
         {/*1 - criacao de form*/}
@@ -25,7 +27,7 @@ console.log(name);
             {/*Label envolvendo input*/}
             <label>
                 <span>E-mail</span>
-                <input type="email" name="email" placeholder="digite seu email" />
+                <input type="email" name="email" placeholder="digite seu email" onChange={(e) => setEmail(e.target.value)}/>
             </label>
 
                 <input type="submit" value="enviar" />
