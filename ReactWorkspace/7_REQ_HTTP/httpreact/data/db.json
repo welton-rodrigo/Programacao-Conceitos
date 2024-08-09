@@ -1,0 +1,24 @@
+{
+    "products": [
+        {
+          "id":1,
+          "name": "Camisa",
+          "price": 59.90
+        },
+        {
+            "id":2,
+            "name": "CALÇA VERMELHA",
+            "price": 90
+          },
+          {
+            "id":3,
+            "name": "BONE",
+            "price": 39.90
+          },
+          {
+            "id":4,
+            "name": "OCULOS",
+            "price": 29.90
+          }
+    ]
+}
