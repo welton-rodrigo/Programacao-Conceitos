@@ -5,18 +5,20 @@ import {useState, useEffect} from "react";
 const url = "http://localhost:3000/products"
 
 function App() {
+  //locais pra salvar os dados
   const [products, setProducts] = useState([])
-  
   const [name, setName] = useState([]);
   const [price, setPrice] = useState([]);
   
   //1 - resgatando dados
+  //chamada asyncrona 
   useEffect(() =>{
     
     async function fetchData(){
     
     const res = await fetch(url)
 
+    //transformando em json object
     const data = await res.json()
 
     setProducts(data)
